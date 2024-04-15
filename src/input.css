@@ -218,6 +218,43 @@
       background-repeat: no-repeat;
       min-height: 300px;
     }
+  .section-product{
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fef6f3 4px ), repeating-linear-gradient( #fdddcf55, #fdddcf );
+    @apply bg-[#fef6f3] py-8 shadow;
+  }
+  .section-product .swiper-wrapper {
+    @apply items-center;
+  }
+  .section-product .swiper-wrapper .swiper-slide.first-slide {
+    @apply w-40 md:w-64 text-center;
+  }
+  .section-product .swiper-wrapper .swiper-slide.first-slide .slide-title > h2 {
+    @apply font-Lalezar text-xl md:text-3xl;
+  }
+  .section-product .swiper-wrapper .swiper-slide.first-slide .link > a {
+    @apply flex items-center justify-center gap-x-2 text-lg font-medium hover:font-semibold transition-all;
+  }
+  .section-product .swiper-wrapper .swiper-slide.product-cart-horizontal {
+    @apply w-72 min-h-44 max-h-44;
+  }
+  .section-product .swiper-wrapper .swiper-slide.product-cart-horizontal .card {
+    @apply bg-slate-50 px-2 py-3 rounded-lg shadow flex justify-between items-center gap-2.5 w-72 max-h-44 min-h-44;
+  }
+  .section-product .swiper-wrapper .swiper-slide.product-cart-horizontal .card .card-body {
+    @apply w-3/5;
+  }
+  .section-product .swiper-wrapper .swiper-slide.product-cart-horizontal .card .card-body > a > h2.card-title {
+    @apply line-clamp-2 text-secondary-800 hover:text-secondary-900 transition-colors;
+  }
+  .section-product .swiper-wrapper .swiper-slide.product-cart-horizontal .card .card-body .card-price {
+    @apply flex flex-col gap-1 text-center text-sm my-3;
+  }
+  .section-product .swiper-wrapper .swiper-slide.product-cart-horizontal .card .card-body .card-btn > a {
+    @apply px-2.5 py-2 block w-fit mx-auto rounded-xl text-white text-sm bg-primary-600 hover:bg-primary-800 transition-colors;
+  }
+  .section-product .swiper-wrapper .swiper-slide.product-cart-horizontal .card .image {
+    @apply w-2/5;
+  }
 }
 .showcaseSlider .swiper-pagination-bullet.swiper-pagination-bullet-active{
  background-color: #ff4500;

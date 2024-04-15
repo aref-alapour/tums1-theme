@@ -104,7 +104,8 @@ tabsTitle.forEach((element) => {
         spaceBetween: 20,
     });
     var konkorSection = $('#konkorCounter').offset();
-    var konkorSectionOffset = (konkorSection.top) - 500;
+    var viewportHeight = $("body").innerHeight();
+    var konkorSectionOffset = (konkorSection.top) - viewportHeight + 300;
     $(window).scroll(function () {
                 if ($(window).scrollTop() >= konkorSectionOffset) {
                     $('#konkorCounter').prop("Counter", 0).animate({
