@@ -122,3 +122,11 @@ tabsTitle.forEach((element) => {
                 }
     });
 })
+
+// Showcase Counseling Archive slider
+let swiper = new Swiper(".counselingSwiper", {
+    navigation: {
+        nextEl: "#next-button-counseling",
+        prevEl: "#prev-button-counseling",
+    },
+});
