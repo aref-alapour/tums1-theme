@@ -255,6 +255,30 @@
   .section-product .swiper-wrapper .swiper-slide.product-cart-horizontal .card .image {
     @apply w-2/5;
   }
+  .footer-menu > ul {
+  @apply space-y-3;
+  }
+  .footer-menu > ul li {
+    width: fit-content;
+    position: relative;
+    padding-right: 0px;
+    transition: all .5s cubic-bezier(.58,1.78,.49,-1.21);
+  }
+  .footer-menu > ul li:hover {
+    padding-right: 15px;
+  }
+  .footer-menu > ul li:before {
+    content: '';
+    width: 0px;
+    height: 100%;
+    background-color: #f56f37;
+    position: absolute;
+    right: 0;
+    transition: all .5s cubic-bezier(.58,1.78,.49,-1.21);
+  }
+  .footer-menu > ul li:hover:before {
+    width: 5px;
+  }
 }
 .showcaseSlider .swiper-pagination-bullet.swiper-pagination-bullet-active{
  background-color: #ff4500;
