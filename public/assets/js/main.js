@@ -130,3 +130,10 @@ let swiper = new Swiper(".counselingSwiper", {
         prevEl: "#prev-button-counseling",
     },
 });
+
+// single course info mobile
+const courseInfoMobileButton = document.querySelector('#courseInfoMobileButton'),
+    courseInfoMobileContent = document.querySelector('#courseInfoMobileContent');
+courseInfoMobileButton.addEventListener('click', ()=>{
+    courseInfoMobileContent.classList.toggle("hidden");
+})

@@ -148,6 +148,7 @@ module.exports = {
       addVariant('child', '& > *');
       addVariant('child-hover', '& > *:hover');
       addVariant('child-third', '& > * > a');
+      addVariant('child-td', '& > * > td');
     },
     require('tailwind-scrollbar-hide'),
     require('@xpd/tailwind-3dtransforms')
