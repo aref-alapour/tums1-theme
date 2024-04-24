@@ -86,6 +86,12 @@ module.exports = {
         140: '1.4',
         145: '1.45',
       },
+      aspectRatio: {
+        '2/1': '2 / 1',
+        '3/1': '3 / 1',
+        '1/2': '1 / 2',
+        '4/3': '4 / 3',
+      },
       keyframes: {
         off: {
           '0%, 100%': { transform: 'rotate(-3deg) scale(1.2)' },

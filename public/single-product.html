@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.png" type="image/x-icon">
+    <title>تامص کنکور</title>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+<!-- All Icons Start -->
+<svg class="hidden">
+    <symbol id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
+    </symbol>
+    <symbol id="login-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75"/>
+    </symbol>
+    <symbol id="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+    </symbol>
+    <symbol id="cart-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+    </symbol>
+    <symbol id="counseling-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"/>
+    </symbol>
+    <symbol id="mobileMenu-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+    </symbol>
+    <symbol id="course-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z"/>
+    </symbol>
+    <symbol id="arrow-left-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"/>
+    </symbol>
+    <symbol id="clock-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+    </symbol>
+    <symbol id="circle-tik-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+    </symbol>
+    <symbol id="chevron-left-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/>
+    </symbol>
+    <symbol id="chevron-right-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
+    </symbol>
+    <symbol id="instagram-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 64 64"
+            fill="currentColor">
+        <path d="M 21.580078 7 C 13.541078 7 7 13.544938 7 21.585938 L 7 42.417969 C 7 50.457969 13.544938 57 21.585938 57 L 42.417969 57 C 50.457969 57 57 50.455062 57 42.414062 L 57 21.580078 C 57 13.541078 50.455062 7 42.414062 7 L 21.580078 7 z M 47 15 C 48.104 15 49 15.896 49 17 C 49 18.104 48.104 19 47 19 C 45.896 19 45 18.104 45 17 C 45 15.896 45.896 15 47 15 z M 32 19 C 39.17 19 45 24.83 45 32 C 45 39.17 39.169 45 32 45 C 24.83 45 19 39.169 19 32 C 19 24.831 24.83 19 32 19 z M 32 23 C 27.029 23 23 27.029 23 32 C 23 36.971 27.029 41 32 41 C 36.971 41 41 36.971 41 32 C 41 27.029 36.971 23 32 23 z"></path>
+    </symbol>
+    <symbol id="eye-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"/>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+    </symbol>
+</svg>
+<!-- All Icons End -->
+<!-- Notification Start -->
+<section class="hidden bg-primary-600 relative py-4" id="siteNotification">
+    <div class="container text-xl text-center font-semibold text-white">
+        <span class="ml-2 inline-block animate-off">70%</span>
+        تخفیف روی دوره‌های تجربی
+    </div>
+    <div
+            class="border-2 border-white rounded-full w-fit p-1 absolute left-3 top-1/2 -translate-y-1/2 cursor-pointer group hover:bg-white transition-colors"
+            id="closeNotification">
+        <svg class="w-5 h-5 text-white group-hover:text-red-500 transition-colors">
+            <use href="#close-icon"></use>
+        </svg>
+    </div>
+</section>
+<!-- Notification End -->
+<!-- Header Start -->
+<header class="hidden md:block bg-secondary-500 py-4">
+    <div class="container flex justify-between items-center">
+        <div>
+            <a href="#"><img src="./assets/images/logo/site_logo.png" alt=""></a>
+        </div>
+        <div
+                class="relative flex justify-between items-center px-4 bg-slate-100 flex-1 md:max-w-60 lg:max-w-80 xl:max-w-lg rounded-md group">
+            <input
+                    class="flex-1 ml-2 bg-transparent py-2 border-none focus:outline-none text-xs md:text-sm lg:text-base"
+                    type="search"
+                    name="s"
+                    id=""
+                    placeholder="جستجو کنید..."/>
+            <span
+                    class="inline-block w-px h-6 bg-gray-800 absolute animate-type group-focus-within:hidden"></span>
+            <button class="cursor-pointer">
+                <svg class="w-4 h-4 xl:w-5 xl:h-5 animate-scale">
+                    <use href="#search-icon"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="flex gap-x-3 items-center">
+            <a href="#" class="pl-3 border-l-2 border-zinc-900/30">
+                <svg
+                        class="w-7 h-7 text-white hover:text-slate-100 transition-colors">
+                    <use href="#cart-icon"></use>
+                </svg>
+            </a>
+            <a href="#" class="flex gap-x-2 text-white hover:text-slate-100">
+                <svg class="w-7 h-7">
+                    <use href="#counseling-icon"></use>
+                </svg>
+                <span class="text-lg font-medium">درخواست مشاوره</span>
+            </a>
+        </div>
+    </div>
+</header>
+<!-- desktop-nav -->
+<nav class="hidden md:block bg-slate-50 py-2 sticky top-0 z-40">
+    <div class="container flex justify-between items-center">
+        <div class="desktop-menu">
+            <ul>
+                <li><a href="#">خانه</a></li>
+                <li><a href="#">مشاوره</a></li>
+                <li><a href="#">دانلود</a></li>
+                <li><a href="#">دوره‌ها</a></li>
+                <li><a href="#">فروشگاه</a></li>
+                <li><a href="#">رتبه‌های برتر</a></li>
+                <li><a href="#">تیم ما</a></li>
+                <li><a href="#">تماس با ما</a></li>
+            </ul>
+        </div>
+        <a href="#"
+           class="flex gap-x-2 items-center bg-primary-500 text-white py-1.5 px-2 rounded-lg hover:bg-primary-600 transition-colors">
+            <svg class="w-6 h-6">
+                <use href="#login-icon"></use>
+            </svg>
+            <span>ورود | ثبت‌نام</span>
+        </a>
+    </div>
+</nav>
+<!-- mobile-nav -->
+<nav class="md:hidden bg-secondary-500 py-4 sticky top-0 z-40">
+    <div class="container flex justify-between items-center">
+        <div id="mobileMenuIcon">
+            <svg class="w-8 h-8 text-white">
+                <use href="#mobileMenu-icon"></use>
+            </svg>
+        </div>
+        <div>
+            <a href="#"><img src="./assets/images/logo/site_logo.png" alt=""></a>
+        </div>
+        <div class="flex gap-x-3 items-center">
+            <a href="#" class="pl-3 border-l-2 border-zinc-900/30">
+                <svg
+                        class="w-7 h-7 text-white hover:text-slate-100 transition-colors">
+                    <use href="#cart-icon"></use>
+                </svg>
+            </a>
+            <a href="#"
+               class="flex gap-x-2 text-white hover:text-slate-100 pl-3 border-l-2 border-zinc-900/30">
+                <svg class="w-7 h-7">
+                    <use href="#counseling-icon"></use>
+                </svg>
+            </a>
+            <a href="#"
+               class=" text-white">
+                <svg class="w-6 h-6">
+                    <use href="#login-icon"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</nav>
+<!-- MobileMenu -->
+<section
+        id="MobileMenuSection"
+        class="fixed md:hidden top-4 bottom-4 right-4 bg-secondary-10 w-72 z-40 py-4 px-6 rounded-lg transition-all duration-500 translate-x-80">
+    <div class="w-24 mx-auto">
+        <a href="#"><img src="./assets/images/logo/site_logo.png" alt=""></a>
+    </div>
+    <div class="flex justify-between gap-2 my-4">
+        <a
+                href="#"
+                class="flex items-center h-10 px-4 gap-x-1 bg-secondary-500 text-white rounded-lg text-xs font-medium text-nowrap">
+            درخواست مشاوره
+        </a>
+        <button
+                type="button"
+                class="flex items-center h-10 px-4 gap-x-1 bg-primary-500 text-white rounded-md text-xs font-medium text-nowrap">
+            ورود | ثبت‌نام
+        </button>
+    </div>
+    <div
+            class="relative flex justify-between items-center px-4 bg-slate-200 flex-1 md:max-w-60 lg:max-w-80 xl:max-w-lg rounded-md group">
+        <input
+                class="flex-1 ml-2 bg-transparent py-3 border-none focus:outline-none text-xs md:text-sm lg:text-base"
+                type="search"
+                name="s"
+                id=""
+                placeholder="جستجو کنید..."/>
+        <span
+                class="inline-block w-px h-6 bg-gray-800 absolute animate-type group-focus-within:hidden"></span>
+        <button class="cursor-pointer">
+            <svg class="w-4 h-4 xl:w-5 xl:h-5 animate-scale">
+                <use href="#search-icon"></use>
+            </svg>
+        </button>
+    </div>
+    <!-- Tabs -->
+    <div
+            class="flex mt-4 justify-center items-center font-medium gap-x-4">
+        <div class="tabs-title text-zinc-500 active" data-menu="tab-site">منوی سایت</div>
+        <div class="tabs-title text-zinc-500" data-menu="tab-category">دسته بندی‌</div>
+    </div>
+    <div>
+        <div class="tab-content" id="tab-site">
+            <nav class="mobile-menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <svg class="w-5 h-5">
+                                <use href="#cat-1"></use>
+                            </svg>
+                            خانه
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                                href="#"
+                                class="text-tertiary-600 flex gap-x-1 items-center menu-btn">
+                            <svg class="w-5 h-5">
+                                <use href="#cat-2"></use>
+                            </svg>
+                            کامپیوتر و IT
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                                href="#"
+                                class="text-tertiary-600 flex gap-x-1 items-center menu-btn">
+                            <svg class="w-5 h-5">
+                                <use href="#cat-3"></use>
+                            </svg>
+                            کسب و کار
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                                href="#"
+                                class="text-tertiary-600 flex gap-x-1 items-center menu-btn">
+                            <svg class="w-5 h-5">
+                                <use href="#cat-1"></use>
+                            </svg>
+                            مواد و متالورژی
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                                href="#"
+                                class="text-tertiary-600 flex gap-x-1 items-center menu-btn">
+                            <svg class="w-5 h-5">
+                                <use href="#cat-2"></use>
+                            </svg>
+                            کامپیوتر و IT
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                                href="#"
+                                class="text-tertiary-600 flex gap-x-1 items-center menu-btn">
+                            <svg class="w-5 h-5">
+                                <use href="#cat-3"></use>
+                            </svg>
+                            کسب و کار
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                                href="#"
+                                class="text-tertiary-600 flex gap-x-1 items-center menu-btn">
+                            <svg class="w-5 h-5">
+                                <use href="#cat-3"></use>
+                            </svg>
+                            کسب و کار
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="tab-content hidden" id="tab-category">
+            <nav>
+                <ul class="flex flex-col items-start gap-y-4 text-xs mt-4">
+                    <li>
+                        <a
+                                href="#"
+                                class="text-tertiary-600 flex gap-x-1 items-center menu-btn">
+                            <svg class="w-4 h-4">
+                                <use href="#cat-1"></use>
+                            </svg>
+                            مواد و متالورژی
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                                href="#"
+                                class="text-tertiary-600 flex gap-x-1 items-center menu-btn">
+                            <svg class="w-4 h-4">
+                                <use href="#cat-2"></use>
+                            </svg>
+                            کامپیوتر و IT
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                                href="#"
+                                class="text-tertiary-600 flex gap-x-1 items-center menu-btn">
+                            <svg class="w-4 h-4">
+                                <use href="#cat-3"></use>
+                            </svg>
+                            کسب و کار
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                                href="#"
+                                class="text-tertiary-600 flex gap-x-1 items-center menu-btn">
+                            <svg class="w-4 h-4">
+                                <use href="#cat-1"></use>
+                            </svg>
+                            مواد و متالورژی
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                                href="#"
+                                class="text-tertiary-600 flex gap-x-1 items-center menu-btn">
+                            <svg class="w-4 h-4">
+                                <use href="#cat-2"></use>
+                            </svg>
+                            کامپیوتر و IT
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                                href="#"
+                                class="text-tertiary-600 flex gap-x-1 items-center menu-btn">
+                            <svg class="w-4 h-4">
+                                <use href="#cat-3"></use>
+                            </svg>
+                            کسب و کار
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                                href="#"
+                                class="text-tertiary-600 flex gap-x-1 items-center menu-btn">
+                            <svg class="w-4 h-4">
+                                <use href="#cat-3"></use>
+                            </svg>
+                            کسب و کار
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+<div
+        class="fixed flex md:hidden items-center justify-center left-4 top-4 bg-slate-50 rounded-full w-8 h-8 z-40 transition-all duration-200 -translate-x-20"
+        id="MenuCloseIcon">
+    <svg class="w-7 h-7 text-red-600">
+        <use href="#close-icon"></use>
+    </svg>
+</div>
+<!-- Header End -->
+<!-- ManContent Start -->
+<section class="container my-8">
+    <div class="flex flex-col md:flex-row justify-between gap-6">
+        <div class="w-full">
+            <!-- Header Blog -->
+            <div>
+                <div class="max-h-72 aspect-3/1 mx-auto rounded-lg md:rounded-xl shadow overflow-hidden"><img
+                        src="./assets/images/counseling-card/bn01-konkuriom.500.500.jpg" alt=""
+                        class="max-h-72 object-cover"></div>
+                <h1 class="mt-2 text-center text-lg md:text-2xl font-bold">عنوان مقاله مشاوره لورم ایپسوم و لورم ایپسوم
+                    و لورم ایپسوم و لورم ایپسوم</h1>
+            </div>
+            <!-- Introduction -->
+            <div class="my-4 py-3 border-t-2 border-b-2 border-dashed">
+                <h2 class="mb-3 text-lg font-medium">مقدمه</h2>
+                <p class="text-justify">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                    نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته
+                    حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+                    رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+                    داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                    حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار
+                    گیرد.
+                </p>
+            </div>
+            <!-- Table of Contents -->
+            <h2 class="mb-3 text-lg font-medium">فهرست مطالب</h2>
+            <ul class="single-table-content">
+                <li><a href="#content1" class="scroll-smooth">مطلب اول</a></li>
+                <li><a href="#content2">مطلب دوم</a></li>
+                <li><a href="#content3">مطلب سوم</a></li>
+                <li><a href="#content4">مطلب چهارم</a></li>
+            </ul>
+            <!-- Box Content -->
+            <div class="bg-secondary-50 rounded-xl py-3 px-2 my-10">
+                <h2 class="text-xl font-semibold mb-4 font-Lalezar">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h2>
+                <p class="px-2 text-justify">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+                    تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                    دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                </p>
+            </div>
+            <!-- Part of Content -->
+            <div id="content1" class="scroll-mt-30 my-8 border border-dashed py-3 px-2 rounded-lg shadow">
+                <h2 class="text-lg font-semibold mb-3">محتوای مطلب اول</h2>
+                <div class="space-y-4">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                        درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+                        را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+                        صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                        وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                        اساسا مورد استفاده قرار گیرد.
+                    </p>
+                    <img src="./assets/images/course/think-thumb.jpg" alt="" class="rounded-xl max-w-96 mx-auto">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                        درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+                        را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+                        صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                        وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                        اساسا مورد استفاده قرار گیرد.
+                    </p>
+                </div>
+            </div>
+            <div id="content2" class="scroll-mt-30 my-8 border border-dashed py-3 px-2 rounded-lg shadow">
+                <h2 class="text-lg font-semibold mb-3">محتوای مطلب دوم</h2>
+                <div class="space-y-4">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                        درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+                        را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+                        صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                        وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                        اساسا مورد استفاده قرار گیرد.
+                    </p>
+                    <img src="./assets/images/course/think-thumb.jpg" alt="" class="rounded-xl max-w-96 mx-auto">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                        درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+                        را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+                        صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                        وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                        اساسا مورد استفاده قرار گیرد.
+                    </p>
+                </div>
+            </div>
+            <!-- Box in Content -->
+            <div class="bg-primary-50 rounded-xl py-3 px-2 my-10">
+                <h2 class="text-xl font-semibold mb-4 font-Lalezar">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h2>
+                <p class="px-2 text-justify">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+                    تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                    دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                </p>
+            </div>
+            <!-- Continue Content -->
+            <div id="content3" class="scroll-mt-30 my-8 border border-dashed py-3 px-2 rounded-lg shadow">
+                <h2 class="text-lg font-semibold mb-3">محتوای مطلب سوم</h2>
+                <div class="space-y-4">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                        درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+                        را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+                        صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                        وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                        اساسا مورد استفاده قرار گیرد.
+                    </p>
+                    <img src="./assets/images/course/think-thumb.jpg" alt="" class="rounded-xl max-w-96 mx-auto">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                        درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+                        را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+                        صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                        وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                        اساسا مورد استفاده قرار گیرد.
+                    </p>
+                </div>
+            </div>
+            <div id="content4" class="scroll-mt-30 mt-8 mb-4 border border-dashed py-3 px-2 rounded-lg shadow">
+                <h2 class="text-lg font-semibold mb-3">محتوای مطلب چهارم</h2>
+                <div class="space-y-4">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                        درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+                        را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+                        صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                        وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                        اساسا مورد استفاده قرار گیرد.
+                    </p>
+                    <img src="./assets/images/course/think-thumb.jpg" alt="" class="rounded-xl max-w-96 mx-auto">
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                        درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری
+                        را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+                        صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
+                        وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                        اساسا مورد استفاده قرار گیرد.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="md:max-w-[250px] lg:max-w-[400px] md:min-w-[200px] lg:min-w-[350px]">
+            <div>
+                <img src="./assets/images/adv/sidebar-baner-1.jpg" alt="">
+            </div>
+            <div class="border py-3 px-1.5 my-4 rounded-lg shadow md:sticky md:top-20 bg-slate-50">
+                <div class="font-semibold mb-2">درخواست مشاوره</div>
+                <form method="post" action="" class="px-2 flex flex-col gap-y-3">
+                    <input type="text" placeholder="نام و نام خانوادگی"
+                           class="h-10 border rounded-lg focus:outline-0 px-1.5 py-1">
+                    <input type="tel" placeholder="شماره تماس"
+                           class="h-10 border rounded-lg focus:outline-0 px-1.5 py-1">
+                    <input type="submit" value="ثبت درخواست"
+                           class="h-10 border rounded-lg focus:outline-0 px-1.5 py-1 bg-primary-500 text-white cursor-pointer">
+                </form>
+            </div>
+            <div>
+                <img src="./assets/images/adv/sidebar-baner-2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Counseling Section Start -->
+<section class="container my-8">
+    <div class="flex items-center justify-center gap-x-2">
+            <span class="w-8 inline-block h-9"><img src="./assets/images/logo/favicon.png"
+                                                    alt=""></span>
+        <h2 class="font-Lalezar text-2xl lg:text-3xl text-center">مشاوره‌های ویژه
+        </h2>
+    </div>
+    <div class="mt-4 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
+        <div class="relative rounded-lg overflow-hidden shadow group">
+            <div>
+                <img src="./assets/images/counseling-card/bn01-konkuriom.500.500.jpg" alt="">
+            </div>
+            <span
+                    class="flex items-center justify-center absolute top-0 left-0 bottom-0 right-0 bg-slate-50/50 rounded-lg scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 group">
+                    <a href="#"
+                       class="flex gap-x-1 items-center font-semibold bg-primary-500 py-1.5 px-2 rounded-lg hover:bg-primary-600 translate-x-10 opacity-0 transition-all duration-500 group-hover:delay-300 group-hover:translate-x-0 group-hover:opacity-100">
+                        <span class="mt-1">
+                            مشاهده
+                        </span>
+                        <svg class='w-4 h-4'>
+                            <use href='#arrow-left-icon'></use>
+                        </svg>
+                    </a>
+                </span>
+        </div>
+        <div class="relative rounded-lg overflow-hidden shadow group">
+            <div>
+                <img src="./assets/images/counseling-card/bn01-konkuriom.500.500.jpg" alt="">
+            </div>
+            <span
+                    class="flex items-center justify-center absolute top-0 left-0 bottom-0 right-0 bg-slate-50/50 rounded-lg scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 group">
+                    <a href="#"
+                       class="flex gap-x-1 items-center font-semibold bg-primary-500 py-1.5 px-2 rounded-lg hover:bg-primary-600 translate-x-10 opacity-0 transition-all duration-500 group-hover:delay-300 group-hover:translate-x-0 group-hover:opacity-100">
+                        <span class="mt-1">
+                            مشاهده
+                        </span>
+                        <svg class='w-4 h-4'>
+                            <use href='#arrow-left-icon'></use>
+                        </svg>
+                    </a>
+                </span>
+        </div>
+        <div class="relative rounded-lg overflow-hidden shadow group">
+            <div>
+                <img src="./assets/images/counseling-card/bn01-konkuriom.500.500.jpg" alt="">
+            </div>
+            <span
+                    class="flex items-center justify-center absolute top-0 left-0 bottom-0 right-0 bg-slate-50/50 rounded-lg scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 group">
+                    <a href="#"
+                       class="flex gap-x-1 items-center font-semibold bg-primary-500 py-1.5 px-2 rounded-lg hover:bg-primary-600 translate-x-10 opacity-0 transition-all duration-500 group-hover:delay-300 group-hover:translate-x-0 group-hover:opacity-100">
+                        <span class="mt-1">
+                            مشاهده
+                        </span>
+                        <svg class='w-4 h-4'>
+                            <use href='#arrow-left-icon'></use>
+                        </svg>
+                    </a>
+                </span>
+        </div>
+        <div class="relative rounded-lg overflow-hidden shadow group">
+            <div>
+                <img src="./assets/images/counseling-card/bn01-konkuriom.500.500.jpg" alt="">
+            </div>
+            <span
+                    class="flex items-center justify-center absolute top-0 left-0 bottom-0 right-0 bg-slate-50/50 rounded-lg scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 group">
+                    <a href="#"
+                       class="flex gap-x-1 items-center font-semibold bg-primary-500 py-1.5 px-2 rounded-lg hover:bg-primary-600 translate-x-10 opacity-0 transition-all duration-500 group-hover:delay-300 group-hover:translate-x-0 group-hover:opacity-100">
+                        <span class="mt-1">
+                            مشاهده
+                        </span>
+                        <svg class='w-4 h-4'>
+                            <use href='#arrow-left-icon'></use>
+                        </svg>
+                    </a>
+                </span>
+        </div>
+    </div>
+</section>
+<!-- Counseling Section End -->
+<!-- Comment Section Start -->
+<section class="container my-8">
+    <h2 class="text-2xl mb-8 font-Lalezar pr-2 border-r-4 border-primary-700 rounded-xl">نظرات کاربران</h2>
+    <div class="space-y-4">
+        <div class="bg-slate-100 p-3 rounded-tr-2xl rounded-bl-2xl shadow">
+            <div class="flex justify-between gap-x-4 items-center mb-4">
+                <span class="font-semibold">نام کاربر</span>
+                <span class="text-sm text-zinc-400">1402/02/01</span>
+            </div>
+            <p class="px-2 text-zinc-700">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            </p>
+        </div>
+        <div class="bg-slate-100 p-3 rounded-tr-2xl rounded-bl-2xl shadow">
+            <div class="flex justify-between gap-x-4 items-center mb-4">
+                <span class="font-semibold">نام کاربر</span>
+                <span class="text-sm text-zinc-400">1402/02/01</span>
+            </div>
+            <p class="px-2 text-zinc-700">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            </p>
+        </div>
+        <div class="bg-slate-100 p-3 rounded-tr-2xl rounded-bl-2xl shadow">
+            <div class="flex justify-between gap-x-4 items-center mb-4">
+                <span class="font-semibold">نام کاربر</span>
+                <span class="text-sm text-zinc-400">1402/02/01</span>
+            </div>
+            <p class="px-2 text-zinc-700">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            </p>
+        </div>
+        <div class="bg-slate-100 p-3 rounded-tr-2xl rounded-bl-2xl shadow">
+            <div class="flex justify-between gap-x-4 items-center mb-4">
+                <span class="font-semibold">نام کاربر</span>
+                <span class="text-sm text-zinc-400">1402/02/01</span>
+            </div>
+            <p class="px-2 text-zinc-700">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            </p>
+        </div>
+    </div>
+    <div class="my-8 px-4">
+        <div class="text-lg font-semibold mb-4 pb-2 border-b-2 border-zinc-100 border-dashed">لطفا نظر خود را بنویسید</div>
+        <form action="" method="post">
+            <textarea placeholder="نظر شما..." class="resize-none focus:outline-0 w-full h-36 overflow-y-auto scrollbar-hide py-3 px-2.5 border border-dashed rounded-xl"></textarea>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                <input type="text" name="name" id="" placeholder="نام و نام خانوادگی" class="focus:outline-0 w-full h-10 px-1.5 py-1 border border-dashed rounded-lg col-span-2 md:col-span-1">
+                <input type="email" name="email" id="" placeholder="ایمیل" class="focus:outline-0 w-full h-10 px-1.5 py-1 border border-dashed rounded-lg">
+                <input type="url" name="website" id="" placeholder="سایت" class="focus:outline-0 w-full h-10 px-1.5 py-1 border border-dashed rounded-lg">
+            </div>
+            <div class="mt-2 text-left">
+                <input type="submit" value="ثبت نظر" class="cursor-pointer font-medium text-white bg-secondary-500 px-2.5 py-1.5 rounded-lg shadow">
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Comment Section End -->
+<!-- ManContent End -->
+<!-- Footer Start -->
+<footer>
+    <section class="bg-secondary-700">
+        <div class="container grid grid-cols-1 md:grid-cols-3 gap-8 py-6 text-white">
+            <div>
+                <div class="font-semibold border-r-2 border-primary-500 pr-2 mb-6">درباره تامص</div>
+                <div class="text-justify">
+                    تیم آموزشی مشاوره ای صادقی، تامص، تشکیل شده از آدم های زیادی که کارشون فرماندهی جنگه اونم برای
+                    سربازانی که جونشون رو برای هدف هاشون کف دستشون گذاشتن.
+                    با یه استراتژی خوب میشه جنگ رو برد…
+                    ولی در هر صورت تا آخرش باهاتم.
+                </div>
+            </div>
+            <div>
+                <div class="font-semibold border-r-2 border-primary-500 pr-2 mb-6">شبکه‌های اجتماعی</div>
+                <div class="flex items-center gap-x-8">
+                    <a href="#" class="inline-block hover:scale-105 transition-transform">
+                        <svg class="w-6 h-6">
+                            <use href="#instagram-icon"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="inline-block hover:scale-105 transition-transform">
+                        <svg class="w-6 h-6">
+                            <use href="#instagram-icon"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="inline-block hover:scale-105 transition-transform">
+                        <svg class="w-6 h-6">
+                            <use href="#instagram-icon"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="inline-block hover:scale-105 transition-transform">
+                        <svg class="w-6 h-6">
+                            <use href="#instagram-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="font-semibold border-r-2 border-primary-500 pr-2 mb-6">دسترسی سریع</div>
+                <div class="grid grid-cols-2 gap-x-4">
+                    <nav class="footer-menu">
+                        <ul>
+                            <li><a href="#">حساب کاربری</a></li>
+                            <li><a href="#">سبد خرید</a></li>
+                            <li><a href="#">تیم ما</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-menu">
+                        <ul>
+                            <li><a href="#">پرداخت</a></li>
+                            <li><a href="#">فروشگاه</a></li>
+                            <li><a href="#">آزمون</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-secondary-800">
+        <p class="py-3 px-1.5 text-center text-white">
+            تمامی حقوق برای سایت <a href="#" class="font-semibold">تامص</a> محفوظ است
+        </p>
+    </section>
+</footer>
+<!-- Footer End -->
+<div id="overlay" class="bg-black/20 fixed top-0 right-0 left-0 bottom-0 z-30 hidden transition-all scale-0"></div>
+</body>
+<script src="./assets/js/jquery-3.7.1.min.js"></script>
+<script src="./assets/js/swiper-bundle.min.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</html>
